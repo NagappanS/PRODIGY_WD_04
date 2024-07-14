@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+body,html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0F2027; 
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    filter: blur(8px); 
+    z-index: 0;
+}
+.main1{
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem ;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 96.5vh;
+}
+.sub2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    color: honeydew;
+    position: relative;
+    z-index: 1;
+}
+.sub2 li {
+    color: honeydew;
+    cursor: pointer;
+    background-color: #0F2027;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.sub2 li:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    transform: scale(1.09); 
+}
+.sub3{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 12rem;
+    left: 5rem;
+}
+.sub3>span1{
+    color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.sub3>span2{
+    color: snow;
+    font-weight: bolder;
+    font-family: 'Roboto', serif;
+    font-size: 2.5rem;
+}
+.sub3>span3{
+    background-color: aquamarine;
+    padding: 0.4rem 2rem;
+    border-radius: 5px;
+    width: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.sub4>span{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 13rem;
+    left: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    color:  white;
+}
+.sub5{
+    display: flex;
+    position: relative;
+    bottom: 15rem;
+    left: 59rem;
+}
+.sub6{
+    background-color: antiquewhite;
+    border:none;
+    height: 2px;
+    margin: 20px 0;
+    width: 85%;
+    position: relative;
+    bottom: 10rem;
+}
+.sub6>span{
+    position: relative;
+    left: 80rem;
+    bottom: 2.2rem;
+    color: beige;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+.sub6 span::after{
+    content: "";
+    position :absolute;
+    right: 12.4rem;
+    top: 0.8rem;
+    width: 11.5px;
+    height: 11.5px;
+    background-color: bisque;
+    border-radius: 50%;
+}

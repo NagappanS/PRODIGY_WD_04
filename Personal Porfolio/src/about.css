@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    filter: blur(8px);
+    z-index: 0;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.sub2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    color: honeydew;
+    position: relative;
+    z-index: 1;
+}
+
+.sub2 li {
+    color: honeydew;
+    cursor: pointer;
+    background-color: #0F2027;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sub2 li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.09);
+}
+
+.Asub3 {
+    position: relative;
+    top: 5rem;
+    left: 4.5rem;
+    display: inline-flex;
+}
+
+.Asub3 img {
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.Asub3 img:hover {
+    transform: scale(1.05);
+}
+
+.Asub3 .overlap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 37.8rem;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    display: none;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.overlap>span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.Asub3:hover .overlap {
+    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+}
+
+.Asub4 {
+    position: relative;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 2rem;
+    left: 45rem;
+}
+
+.Asub4 span {
+    background-color: #ff006e;
+    color: #0F2027;
+    padding: 0.2rem 1rem;
+    border: #2C5364;
+    border-radius: 9px;
+}
+
+.Asub5 {
+    position: relative;
+    left: 45rem;
+    bottom: 23.5rem;
+}
+
+.Asub5 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+
+.Asub6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 45rem;
+    bottom: 25rem;
+}
+
+.Asub6 span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+@media (max-width: 1200px) {
+    .Asub4, .Asub5, .Asub6 {
+        left: 30rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .Asub3 {
+        top: 4rem;
+        left: 2rem;
+    }
+    .Asub4, .Asub5, .Asub6 {
+        left: 20rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Asub3 {
+        top: 3rem;
+        left: 1rem;
+    }
+    .Asub4, .Asub5, .Asub6 {
+        left: 10rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Asub3 {
+        top: 2rem;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .Asub4, .Asub5, .Asub6 {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+    }
+    .Asub4 span {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+}
